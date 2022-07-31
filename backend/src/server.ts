@@ -1,16 +1,11 @@
 import express from "express";
 import cors from "cors";
-<<<<<<< HEAD
+
 import {data_foods, data_tags, data_users} from "./data";
 import jwt from "jsonwebtoken";
 
 const app = express();
 app.use(express.json());
-=======
-import {data_foods, data_tags} from "./data";
-
-const app = express();
->>>>>>> origin/main
 
 app.use(cors({
   credentials: true,
@@ -43,7 +38,6 @@ app.get("/api/foods/:foodId", (req, res) => {
   res.send(food);
 })
 
-<<<<<<< HEAD
 app.post("/api/users/login", (req, res) => {
   const {email, password} = req.body;
   const user = data_users.find(user => user.email === email
@@ -67,8 +61,6 @@ const generateTokenResponse = (user: any) => {
   return user;
 }
 
-=======
->>>>>>> origin/main
 const port = 5000;
 app.listen(port, () => {
   console.log("Website served on http://localhost:" + port);

@@ -76,7 +76,6 @@ export const data_tags: any[] = [
   { name: 'Hamburger', count: 1 },
   { name: 'Fry', count: 1 },
   { name: 'Soup', count: 1 },
-<<<<<<< HEAD
 ];
 
 export const data_users: any[] = [
@@ -94,6 +93,4 @@ export const data_users: any[] = [
     address: "Qooshoku",
     isAdmin: false,
   },
-=======
->>>>>>> origin/main
 ]
