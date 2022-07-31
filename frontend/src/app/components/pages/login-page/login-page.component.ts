@@ -7,28 +7,27 @@ import {FormBuilder, FormGroup, Validators} from "@angular/forms";
   styleUrls: ['./login-page.component.scss']
 })
 export class LoginPageComponent implements OnInit {
-  loginForm!: FormGroup;
+  loginForm!:FormGroup;
   isSubmitted = false;
-
-  constructor(private formBuilder: FormBuilder) {
-  }
+  constructor(private formBuilder: FormBuilder) { }
 
   ngOnInit(): void {
     this.loginForm = this.formBuilder.group({
-      email: ['', [Validators.required, Validators.email]],
-      password: ['', Validators.required]
-    });
+      email:['', [Validators.required,Validators.email]],
+      password:['', Validators.required]
+    })
   }
 
-  get fc() {
+  get fc(){
     return this.loginForm.controls;
   }
 
-  submit() {
+  submit(){
     this.isSubmitted = true;
-    if (this.loginForm.invalid) return;
+    if(this.loginForm.invalid) return;
 
     alert(`email: ${this.fc.email.value},
-    password: ${this.fc.pasword.value}`)
+     password: ${this.fc.password.value}`)
   }
+
 }

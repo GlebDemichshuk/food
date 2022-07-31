@@ -76,4 +76,21 @@ export const data_tags: any[] = [
   { name: 'Hamburger', count: 1 },
   { name: 'Fry', count: 1 },
   { name: 'Soup', count: 1 },
+];
+
+export const data_users: any[] = [
+  {
+    name: "Gleb Demichshuk",
+    email: "gleb@gmail.com",
+    password: "123456",
+    address: "Shahtinsk",
+    isAdmin: true,
+  },
+  {
+    name: "Marina Demichshuk",
+    email: "marina@gmail.com",
+    password: "123456",
+    address: "Qooshoku",
+    isAdmin: false,
+  },
 ]
