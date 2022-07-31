@@ -17,6 +17,8 @@ import {SearchComponent} from "./components/partials/search/search.component";
 import {HomeComponent} from "./components/pages/home/home.component";
 import {ToastrModule} from "ngx-toastr";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import { InputContainerComponent } from './components/partials/input-container/input-container.component';
+import { InputValidatorComponent } from './compoents/partials/input-validator/input-validator.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +32,8 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
     TitleComponent,
     NotFoundComponent,
     LoginPageComponent,
+    InputContainerComponent,
+    InputValidatorComponent,
   ],
   imports: [
     BrowserModule,
