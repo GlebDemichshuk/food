@@ -18,7 +18,8 @@ import {HomeComponent} from "./components/pages/home/home.component";
 import {ToastrModule} from "ngx-toastr";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import { InputContainerComponent } from './components/partials/input-container/input-container.component';
-import { InputValidatorComponent } from './compoents/partials/input-validator/input-validator.component';
+import {InputValidatorComponent} from "./components/partials/input-validator/input-validator.component";
+import { TextInputComponent } from './components/partials/text-input/text-input.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { InputValidatorComponent } from './compoents/partials/input-validator/in
     LoginPageComponent,
     InputContainerComponent,
     InputValidatorComponent,
+    TextInputComponent
   ],
   imports: [
     BrowserModule,

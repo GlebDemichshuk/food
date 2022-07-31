@@ -6,10 +6,11 @@
 
       <input-container label="Email">
         <input type="email" placeholder="Email" formControlName="email"/>
-        <div class="error-list" *ngIf="fc.email.errors && isSubmitted">
-          <div *ngIf="fc.email.errors.required">Should not be empty</div>
-          <div *ngIf="fc.email.errors.email">Email is not correct</div>
-        </div>
+
+        <input-validator
+        [control]="fc.email"
+        [showErrorsWhen]="isSubmitted">
+        </input-validator>
       </input-container>
 
 
