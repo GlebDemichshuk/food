@@ -3,7 +3,9 @@ import {AbstractControl} from "@angular/forms";
 
 const VALIDATORS_MESSAGE: any = {
   required: 'Should not be empty',
-  email: 'Email in not valid'
+  email: 'Email in not valid',
+  minlength: 'Field id too short',
+  notMatch: 'Password and Confirm does not match'
 }
 
 @Component({
@@ -40,7 +42,7 @@ export class InputValidatorComponent implements OnInit, OnChanges {
     const errors = this.control.errors;
     if(!errors){
       this.errorMessages = [];
-      return
+      return;
     }
 
     const errorKeys = Object.keys(errors);
