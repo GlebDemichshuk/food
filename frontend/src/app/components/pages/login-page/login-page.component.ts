@@ -15,7 +15,8 @@ export class LoginPageComponent implements OnInit {
 
   constructor(private formBuilder: FormBuilder,
               private userService: UserService,
-              private activatedRoute: ActivatedRoute, private router: Router) {
+              private activatedRoute: ActivatedRoute,
+              private router: Router) {
   }
 
   ngOnInit(): void {
@@ -27,18 +28,16 @@ export class LoginPageComponent implements OnInit {
     this.returnUrl = this.activatedRoute.snapshot.queryParams.returnURL;
   }
 
-  get fc() {
+  get fc(){
     return this.loginForm.controls;
   }
 
-  submit() {
+  submit(){
     this.isSubmitted = true;
-    if (this.loginForm.invalid) return;
+    if(this.loginForm.invalid) return;
 
-    this.userService.login({
-      email: this.fc.email.value,
-      password: this.fc.password.value
-    }).subscribe(() => {
+    this.userService.login({email:this.fc.email.value,
+      password: this.fc.password.value}).subscribe(() => {
       this.router.navigateByUrl(this.returnUrl);
     });
   }
