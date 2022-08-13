@@ -11,7 +11,7 @@ import {
 } from "leaflet";
 import {map, Map} from 'leaflet';
 import {LocationService} from "../../../services/location.service";
-import {Order} from "../../../shared/models/order";
+import {Order} from "../../../shared/models/Order";
 
 @Component({
   selector: 'map',

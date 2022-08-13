@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {Order} from "../../../shared/models/order";
+import {Order} from "../../../shared/models/Order";
 
 @Component({
   selector: 'order-items-list',

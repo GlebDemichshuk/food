@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {Order} from "../../../shared/models/order";
+import {Order} from "../../../shared/models/Order";
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import {CartService} from "../../../services/cart.service";
 import {UserService} from "../../../services/user.service";
